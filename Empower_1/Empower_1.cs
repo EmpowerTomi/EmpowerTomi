@@ -81,7 +81,7 @@ namespace Empower_1
 			}
 			*/
 			var order = OrderFactory.CreateOrder("Order 1");
-			order.Dispatch("Tomi ");
+			order.Dispatch("Tomi Valtonen");
 		}
 	}
 }
