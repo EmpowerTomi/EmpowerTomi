@@ -57,6 +57,7 @@ namespace Empower_1
 	using System.Text;
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.Core.DataMinerSystem.Automation;
+	using Empower.Library.Room4;
 
 	/// <summary>
 	/// Represents a DataMiner Automation script.
@@ -69,6 +70,7 @@ namespace Empower_1
 		/// <param name="engine">Link with SLAutomation process.</param>
 		public void Run(IEngine engine)
 		{
+			/*
 			var dms = engine.GetDms();
 
 			var elements = dms.GetElements();
@@ -77,6 +79,9 @@ namespace Empower_1
 			{
 				engine.GenerateInformation("element: " + element.Name);
 			}
+			*/
+			var order = OrderFactory.CreateOrder("Order 1");
+			order.Dispatch("Tomi");
 		}
 	}
 }
